@@ -1,19 +1,20 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 29 12:48:46 2022
-
-@author: vqhoa
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
+x = [0, 1, 2, 3]
+y = [0, 0, 0, 0]
+z = [0, 2, 3, 3]
 
-xline = [1,2,3]
-yline = [1,2,3]
-zline = [1,2,3]
+print(z)
+
+fig = plt.figure()
+plt.figure(figsize=(10, 10))
+ax = plt.axes(projection='3d')
+ax.plot3D(x, y, z, 'green', marker='o')
+plt.xlabel('X')
+plt.ylabel('Y')
+
+plt.show()
 
 
 ax.plot3D(xline, yline, zline, 'gray')
