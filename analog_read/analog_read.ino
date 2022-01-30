@@ -12,10 +12,12 @@ void loop() {
   sensorValue2 = analogRead(A1);
   
   // stop the program for <sensorValue> milliseconds:
-  volt1 = sensorValue1*10/1023;
-  volt2 = sensorValue2*10/1023;
-  Serial.print(volt1);
+  volt1 = sensorValue1*27/1023;
+  volt2 = sensorValue2*27/1023;
+  Serial.print("Shoulder: ");
+  Serial.print(volt1,2);
   Serial.print("  ");
-  Serial.println(volt2);
+  Serial.print("Elbow: ");
+  Serial.println(volt2,2);
   delay(1000);
 }
